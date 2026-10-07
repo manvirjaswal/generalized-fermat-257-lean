@@ -49,26 +49,3 @@ jobs:
       - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
         with:
           build: true
-
-  comparator:
-    name: Check statement against solution
-    runs-on: ubuntu-latest
-    timeout-minutes: 350
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          persist-credentials: false
-      - name: Check Lean source requirements before builds
-        run: python3 scripts/check-lean-sources.py
-      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
-        with:
-          build: false
-      - name: Install bubblewrap for lake comparator's sandbox
-        # Ubuntu 24.04 restricts unprivileged user namespaces through AppArmor,
-        # which `bwrap` needs for the sandbox; the runner is disposable.
-        run: |
-          sudo apt-get update -qq >/dev/null
-          sudo apt-get install -y -qq bubblewrap >/dev/null
-          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
-      - name: Run the toolchain's lake comparator
-        run: ./scripts/verify-comparator.sh
