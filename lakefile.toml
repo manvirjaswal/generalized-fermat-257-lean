@@ -1,0 +1,11 @@
+name = "x2y5z7"
+version = "0.1.0"
+defaultTargets = ["X2Y5Z7"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "5ed2965256430c3649e86755f9576b54eca72435"
+
+[[lean_lib]]
+name = "X2Y5Z7"
