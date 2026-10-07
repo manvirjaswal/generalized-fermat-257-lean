@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "X2Y5Z7.theorem_1_1",
+    "X2Y5Z7.theorem_1_2",
+    "X2Y5Z7.theorem_1_2_257",
+    "X2Y5Z7.theorem_1_2_572",
+    "X2Y5Z7.h_irreducible",
+    "X2Y5Z7.ψL8_irreducible"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}
