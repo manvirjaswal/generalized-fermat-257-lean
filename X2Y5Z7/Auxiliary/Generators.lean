@@ -1,5 +1,9 @@
-import X2Y5Z7.Descent.Basic
-import X2Y5Z7.Residue.L8
+module
+
+public import X2Y5Z7.Descent.Basic
+public import X2Y5Z7.Residue.L8
+
+@[expose] public section
 
 /-! # Integral generators of `L8` attached to a solution
 

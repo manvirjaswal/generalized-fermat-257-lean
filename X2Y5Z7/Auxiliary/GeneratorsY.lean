@@ -1,4 +1,8 @@
-import X2Y5Z7.Auxiliary.Generators
+module
+
+public import X2Y5Z7.Auxiliary.Generators
+
+@[expose] public section
 
 /-! # The case `q ∣ Y`: the generators `τ_d`
 

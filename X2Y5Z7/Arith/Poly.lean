@@ -1,7 +1,11 @@
-import Mathlib.Algebra.Ring.Basic
-import Mathlib.Algebra.CharZero.Defs
-import Mathlib.Algebra.Ring.Int.Defs
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.Algebra.Ring.Basic
+public import Mathlib.Algebra.CharZero.Defs
+public import Mathlib.Algebra.Ring.Int.Defs
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! # Integer polynomials as lists, for kernel-checked identities
 

@@ -1,6 +1,10 @@
-import X2Y5Z7.Main.PaperRoute
-import X2Y5Z7.Main.SUnitFacts
-import X2Y5Z7.SUnitPrimes.Theorems
+module
+
+public import X2Y5Z7.Main.PaperRoute
+public import X2Y5Z7.Main.SUnitFacts
+public import X2Y5Z7.SUnitPrimes.Theorems
+
+@[expose] public section
 
 /-! # Valuations of `∏ B_j^{e_j} · z⁵` at the primes `P_i = (B_i)`
 

@@ -1,5 +1,9 @@
-import X2Y5Z7.SymbolSets.Basic
-import Mathlib.Data.List.GetD
+module
+
+public import X2Y5Z7.SymbolSets.Basic
+public import Mathlib.Data.List.GetD
+
+@[expose] public section
 
 /-! # Proposition 5.3: the certificate checker and its soundness
 

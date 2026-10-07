@@ -1,5 +1,9 @@
-import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
-import Mathlib.Data.ZMod.Basic
+module
+
+public import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
+public import Mathlib.Data.ZMod.Basic
+
+@[expose] public section
 
 /-! # The fifth-power residue symbol on a field
 

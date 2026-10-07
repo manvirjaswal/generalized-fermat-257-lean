@@ -1,5 +1,9 @@
-import X2Y5Z7.FiveAdic.Primes
-import Mathlib.NumberTheory.RamificationInertia.Valuation
+module
+
+public import X2Y5Z7.FiveAdic.Primes
+public import Mathlib.NumberTheory.RamificationInertia.Valuation
+
+@[expose] public section
 
 /-! # The primes of `L₈` above 5 and the valuations of elements of `L₈` (Lemmas 2.4, 2.5)
 

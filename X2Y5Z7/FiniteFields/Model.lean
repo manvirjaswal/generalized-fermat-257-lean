@@ -1,8 +1,12 @@
-import X2Y5Z7.FiniteFields.Irreducible
-import X2Y5Z7.FiniteFields.Symbol
-import X2Y5Z7.SUnits.Data
-import Mathlib.FieldTheory.Finite.Basic
-import Mathlib.Tactic.NormNum.Prime
+module
+
+public import X2Y5Z7.FiniteFields.Irreducible
+public import X2Y5Z7.FiniteFields.Symbol
+public import X2Y5Z7.SUnits.Data
+public import Mathlib.FieldTheory.Finite.Basic
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 /-! # Finite-field models of residue fields, with symbols
 

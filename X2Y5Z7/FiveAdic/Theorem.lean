@@ -1,4 +1,8 @@
-import X2Y5Z7.FiveAdic.Norms
+module
+
+public import X2Y5Z7.FiveAdic.Norms
+
+@[expose] public section
 
 /-! # Proposition 4.2: `5 ∤ YZ` and the valuations of `E` at the primes above 5
 

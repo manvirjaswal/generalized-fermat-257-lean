@@ -1,5 +1,9 @@
-import Mathlib.FieldTheory.Finite.Extension
-import Mathlib.FieldTheory.Minpoly.Field
+module
+
+public import Mathlib.FieldTheory.Finite.Extension
+public import Mathlib.FieldTheory.Minpoly.Field
+
+@[expose] public section
 
 /-! # Degree bounds from power equations in finite fields
 

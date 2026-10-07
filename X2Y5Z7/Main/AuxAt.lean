@@ -1,4 +1,8 @@
-import X2Y5Z7.ResidueSymbols.Symbols
+module
+
+public import X2Y5Z7.ResidueSymbols.Symbols
+
+@[expose] public section
 
 /-! # The conditions at one auxiliary prime
 

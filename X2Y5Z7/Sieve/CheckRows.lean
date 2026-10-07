@@ -1,4 +1,8 @@
-import X2Y5Z7.Sieve.Check
+module
+
+public import X2Y5Z7.Sieve.Check
+
+@[expose] public section
 
 /-! # The chunks of the finite check
 

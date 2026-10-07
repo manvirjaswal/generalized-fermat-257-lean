@@ -1,8 +1,12 @@
-import X2Y5Z7.SUnitPrimes.Cert0
-import X2Y5Z7.SUnitPrimes.Cert1
-import X2Y5Z7.SUnitPrimes.Cert2
-import X2Y5Z7.SUnitPrimes.Cert3
-import X2Y5Z7.Main.SUnitFacts
+module
+
+public import X2Y5Z7.SUnitPrimes.Cert0
+public import X2Y5Z7.SUnitPrimes.Cert1
+public import X2Y5Z7.SUnitPrimes.Cert2
+public import X2Y5Z7.SUnitPrimes.Cert3
+public import X2Y5Z7.Main.SUnitFacts
+
+@[expose] public section
 
 /-! # Proposition 6.2(i): the primes `(B₁), …, (B₁₂)` are distinct, and `v_{P_i}(B_j) = δ_{ij}`
 

@@ -1,4 +1,8 @@
-import X2Y5Z7.Sieve.CheckRows
+module
+
+public import X2Y5Z7.Sieve.CheckRows
+
+@[expose] public section
 
 /-! # The finite check passes -/
 

@@ -1,5 +1,9 @@
-import X2Y5Z7.Integral.Basic
-import X2Y5Z7.SUnits.Data
+module
+
+public import X2Y5Z7.Integral.Basic
+public import X2Y5Z7.SUnits.Data
+
+@[expose] public section
 
 /-! # Products of the `B_j` as integer polynomials
 

@@ -1,11 +1,15 @@
-import X2Y5Z7.Fields.Frobenius17
-import Mathlib.RingTheory.Polynomial.Eisenstein.Basic
-import Mathlib.RingTheory.Polynomial.GaussLemma
-import Mathlib.Algebra.Polynomial.Eval.Irreducible
-import Mathlib.Algebra.Polynomial.SpecificDegree
-import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
-import Mathlib.NumberTheory.NumberField.Basic
-import Mathlib.Tactic.ComputeDegree
+module
+
+public import X2Y5Z7.Fields.Frobenius17
+public import Mathlib.RingTheory.Polynomial.Eisenstein.Basic
+public import Mathlib.RingTheory.Polynomial.GaussLemma
+public import Mathlib.Algebra.Polynomial.Eval.Irreducible
+public import Mathlib.Algebra.Polynomial.SpecificDegree
+public import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
+public import Mathlib.NumberTheory.NumberField.Basic
+public import Mathlib.Tactic.ComputeDegree
+
+@[expose] public section
 
 /-! # The fields `L₈` and `L₂₄` (Section 2 of the paper)
 

@@ -2,8 +2,12 @@
 Generated from the tables printed in the paper.
 -/
 
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Data.ZMod.Basic
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Notation
+public import Mathlib.Data.ZMod.Basic
+
+@[expose] public section
 
 /-! # The data of Theorem 7.1 (the sieve), as printed in the paper
 

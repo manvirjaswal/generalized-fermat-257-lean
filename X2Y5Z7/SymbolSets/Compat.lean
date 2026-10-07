@@ -1,4 +1,8 @@
-import X2Y5Z7.FiniteFields.Residue
+module
+
+public import X2Y5Z7.FiniteFields.Residue
+
+@[expose] public section
 
 /-! # Proposition 5.3: compatibility of the embeddings with the residue maps
 

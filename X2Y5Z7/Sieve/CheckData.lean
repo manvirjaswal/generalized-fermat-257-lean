@@ -3,7 +3,11 @@ Generated from the tables printed in the paper.
 List forms of the data used by the kernel check in `Check.lean`, which proves that they equal the matrices and vectors of `Data.lean` and `Certificate.lean`.
 -/
 
-import Mathlib.Data.ZMod.Defs
+module
+
+public import Mathlib.Data.ZMod.Defs
+
+@[expose] public section
 
 namespace X2Y5Z7.Sieve.Cert
 

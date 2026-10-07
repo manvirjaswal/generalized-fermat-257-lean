@@ -1,7 +1,11 @@
-import X2Y5Z7.Assembly.TFamily
-import X2Y5Z7.Main.AuxAt
-import X2Y5Z7.ResidueSymbols.EResidue
-import X2Y5Z7.SymbolSets.Check
+module
+
+public import X2Y5Z7.Assembly.TFamily
+public import X2Y5Z7.Main.AuxAt
+public import X2Y5Z7.ResidueSymbols.EResidue
+public import X2Y5Z7.SymbolSets.Check
+
+@[expose] public section
 
 /-! # Glue for the per-prime assembly
 

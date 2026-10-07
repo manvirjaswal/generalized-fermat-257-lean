@@ -1,5 +1,9 @@
-import X2Y5Z7.Descent.Basic
-import X2Y5Z7.Selmer.L24SIntegers
+module
+
+public import X2Y5Z7.Descent.Basic
+public import X2Y5Z7.Selmer.L24SIntegers
+
+@[expose] public section
 
 /-! # Proposition 3.1: the descent element has valuations divisible by 5 away from 2, 5, 7
 

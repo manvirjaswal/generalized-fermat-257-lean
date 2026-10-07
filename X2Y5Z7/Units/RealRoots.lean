@@ -1,6 +1,10 @@
-import X2Y5Z7.Fields.Basic
-import Mathlib.Topology.Order.IntermediateValue
-import Mathlib.Topology.Instances.Real.Lemmas
+module
+
+public import X2Y5Z7.Fields.Basic
+public import Mathlib.Topology.Order.IntermediateValue
+public import Mathlib.Topology.Instances.Real.Lemmas
+
+@[expose] public section
 
 /-! # The real roots of `h` and `ψ`
 

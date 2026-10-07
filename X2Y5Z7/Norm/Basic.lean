@@ -1,5 +1,9 @@
-import X2Y5Z7.Integral.Basic
-import X2Y5Z7.Descent.Basic
+module
+
+public import X2Y5Z7.Integral.Basic
+public import X2Y5Z7.Descent.Basic
+
+@[expose] public section
 
 /-! # Proposition 3.2: the norm of the descent element
 

@@ -1,9 +1,13 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.SUnits.Cert0
-import X2Y5Z7.SUnits.Cert1
-import X2Y5Z7.SUnits.Prod
+module
+
+public import X2Y5Z7.SUnits.Cert0
+public import X2Y5Z7.SUnits.Cert1
+public import X2Y5Z7.SUnits.Prod
+
+@[expose] public section
 
 /-! # Data for the primes above 2, 5 and 7
 

@@ -1,5 +1,9 @@
-import X2Y5Z7.FiniteFields.Model
-import X2Y5Z7.Residue.L24
+module
+
+public import X2Y5Z7.FiniteFields.Model
+public import X2Y5Z7.Residue.L24
+
+@[expose] public section
 
 /-! # Residue maps from the finite-field models
 

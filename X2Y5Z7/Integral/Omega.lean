@@ -1,7 +1,11 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.Integral.Basic
+module
+
+public import X2Y5Z7.Integral.Basic
+
+@[expose] public section
 
 /-! # The integral basis `ω_k = W_k(a)/820` of `L₈` consists of algebraic integers
 

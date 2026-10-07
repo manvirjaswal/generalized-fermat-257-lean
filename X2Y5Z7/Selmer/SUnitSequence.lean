@@ -1,10 +1,14 @@
-import Mathlib.RingTheory.DedekindDomain.SelmerGroup
-import Mathlib.RingTheory.DedekindDomain.Factorization
-import Mathlib.RingTheory.ClassGroup.Basic
-import Mathlib.GroupTheory.OrderOfElement
-import Mathlib.RingTheory.ClassGroup.ExtendedHom
-import Mathlib.RingTheory.Localization.Ideal
-import Mathlib.GroupTheory.Index
+module
+
+public import Mathlib.RingTheory.DedekindDomain.SelmerGroup
+public import Mathlib.RingTheory.DedekindDomain.Factorization
+public import Mathlib.RingTheory.ClassGroup.Basic
+public import Mathlib.GroupTheory.OrderOfElement
+public import Mathlib.RingTheory.ClassGroup.ExtendedHom
+public import Mathlib.RingTheory.Localization.Ideal
+public import Mathlib.GroupTheory.Index
+
+@[expose] public section
 
 /-! # Units modulo `n`-th powers and the Selmer group `K(∅, n)`
 

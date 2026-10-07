@@ -1,5 +1,9 @@
-import X2Y5Z7.FiniteFields.Residue
-import Mathlib.RingTheory.DedekindDomain.AdicValuation
+module
+
+public import X2Y5Z7.FiniteFields.Residue
+public import Mathlib.RingTheory.DedekindDomain.AdicValuation
+
+@[expose] public section
 
 /-! # Residues and fifth-power symbols on the local ring of a prime of a number field
 

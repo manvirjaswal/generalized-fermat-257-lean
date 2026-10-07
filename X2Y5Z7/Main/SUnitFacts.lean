@@ -1,5 +1,9 @@
-import X2Y5Z7.SUnits.Theorems
-import X2Y5Z7.Reduction.SelmerForm
+module
+
+public import X2Y5Z7.SUnits.Theorems
+public import X2Y5Z7.Reduction.SelmerForm
+
+@[expose] public section
 
 /-! # The S-unit basis of Table 4 satisfies the hypotheses of the Selmer reduction -/
 

@@ -1,7 +1,11 @@
-import X2Y5Z7.Residue.Clearing
-import X2Y5Z7.Fields.Basic
-import Mathlib.RingTheory.DedekindDomain.Different
-import Mathlib.FieldTheory.Minpoly.IsIntegrallyClosed
+module
+
+public import X2Y5Z7.Residue.Clearing
+public import X2Y5Z7.Fields.Basic
+public import Mathlib.RingTheory.DedekindDomain.Different
+public import Mathlib.FieldTheory.Minpoly.IsIntegrallyClosed
+
+@[expose] public section
 
 /-! # Residue maps of the ring of integers of `L8`
 

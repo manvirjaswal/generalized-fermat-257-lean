@@ -1,5 +1,9 @@
-import X2Y5Z7.Norm.Local
-import X2Y5Z7.Integral.Basic
+module
+
+public import X2Y5Z7.Norm.Local
+public import X2Y5Z7.Integral.Basic
+
+@[expose] public section
 
 /-! # The elements `u₁, …, u₁₀` of `L₈` (Table 5 of the paper)
 

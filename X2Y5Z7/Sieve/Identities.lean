@@ -1,7 +1,11 @@
-import X2Y5Z7.Sieve.Data
-import X2Y5Z7.Sieve.Certificate
-import X2Y5Z7.Sieve.CheckData
-import X2Y5Z7.Sieve.ListAlg
+module
+
+public import X2Y5Z7.Sieve.Data
+public import X2Y5Z7.Sieve.Certificate
+public import X2Y5Z7.Sieve.CheckData
+public import X2Y5Z7.Sieve.ListAlg
+
+@[expose] public section
 
 /-! # The properties of the certificate that the proof uses
 

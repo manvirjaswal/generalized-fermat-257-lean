@@ -1,8 +1,12 @@
-import Mathlib.LinearAlgebra.Matrix.Block
-import Mathlib.Algebra.BigOperators.Field
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Block
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.LinearAlgebra.Matrix.Notation
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! Exact rational LU certificates checked through integer identities. -/
 namespace X2Y5Z7.Integral.LU

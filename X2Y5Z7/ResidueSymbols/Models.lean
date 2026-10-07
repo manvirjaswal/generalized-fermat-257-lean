@@ -1,6 +1,10 @@
-import X2Y5Z7.FiniteFields.Residue
-import X2Y5Z7.Residue.L24
-import X2Y5Z7.SUnits.Data
+module
+
+public import X2Y5Z7.FiniteFields.Residue
+public import X2Y5Z7.Residue.L24
+public import X2Y5Z7.SUnits.Data
+
+@[expose] public section
 
 /-! # The residues of the S-unit basis at the model primes
 

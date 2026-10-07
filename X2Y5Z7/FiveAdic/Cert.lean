@@ -1,8 +1,12 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.SUnits.Collect
-import X2Y5Z7.SUnits.Prod
+module
+
+public import X2Y5Z7.SUnits.Collect
+public import X2Y5Z7.SUnits.Prod
+
+@[expose] public section
 
 /-! # A certificate: `5b + 2` lies in the prime `P₅ = (B₅)` of `L₂₄` above 5
 

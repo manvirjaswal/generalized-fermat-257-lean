@@ -1,4 +1,8 @@
-import X2Y5Z7.Auxiliary.Distinct
+module
+
+public import X2Y5Z7.Auxiliary.Distinct
+
+@[expose] public section
 
 /-! # Residue degrees of several primes versus the factorization of a polynomial mod `q`
 

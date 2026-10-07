@@ -1,7 +1,11 @@
-import X2Y5Z7.Primes.Basic
-import X2Y5Z7.Auxiliary.GeneratorsY
-import X2Y5Z7.Auxiliary.Degree
-import Mathlib.NumberTheory.LegendreSymbol.Basic
+module
+
+public import X2Y5Z7.Primes.Basic
+public import X2Y5Z7.Auxiliary.GeneratorsY
+public import X2Y5Z7.Auxiliary.Degree
+public import Mathlib.NumberTheory.LegendreSymbol.Basic
+
+@[expose] public section
 
 /-! # Corollary 5.5 (`q ∤ XYZ`): the auxiliary prime `q` divides none of `X`, `Y`, `Z` (generic part)
 

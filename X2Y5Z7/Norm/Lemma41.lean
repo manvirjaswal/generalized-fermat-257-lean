@@ -1,9 +1,13 @@
-import X2Y5Z7.Norm.Basic
-import X2Y5Z7.SUnits.Theorems
-import X2Y5Z7.Descent.Valuations
-import Mathlib.LinearAlgebra.FreeModule.IdealQuotient
-import Mathlib.NumberTheory.Padics.PadicVal.Basic
-import Mathlib.GroupTheory.Perm.Cycle.Type
+module
+
+public import X2Y5Z7.Norm.Basic
+public import X2Y5Z7.SUnits.Theorems
+public import X2Y5Z7.Descent.Valuations
+public import Mathlib.LinearAlgebra.FreeModule.IdealQuotient
+public import Mathlib.NumberTheory.Padics.PadicVal.Basic
+public import Mathlib.GroupTheory.Perm.Cycle.Type
+
+@[expose] public section
 
 /-! # Lemma 4.1: the valuation of the descent element at the prime above 2
 

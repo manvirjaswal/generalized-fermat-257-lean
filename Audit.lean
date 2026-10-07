@@ -1,4 +1,8 @@
-import X2Y5Z7
+module
+
+public import X2Y5Z7
+
+@[expose] public section
 
 /-! Run `lake env lean Audit.lean`. It prints the statements of the main results and the axioms their proofs use,
 and runs a few sanity checks on the objects in the statements. -/

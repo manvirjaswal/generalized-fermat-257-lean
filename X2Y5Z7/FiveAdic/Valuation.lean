@@ -1,5 +1,9 @@
-import Mathlib.RingTheory.DedekindDomain.AdicValuation
-import Mathlib.NumberTheory.NumberField.Basic
+module
+
+public import Mathlib.RingTheory.DedekindDomain.AdicValuation
+public import Mathlib.NumberTheory.NumberField.Basic
+
+@[expose] public section
 
 /-! # Additive valuations at the primes of a number field
 

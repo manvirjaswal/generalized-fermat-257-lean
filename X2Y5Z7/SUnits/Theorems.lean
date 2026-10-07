@@ -1,8 +1,12 @@
-import X2Y5Z7.SUnits.Collect
-import X2Y5Z7.SUnits.ClassData
-import X2Y5Z7.Selmer.L24SIntegers
-import Mathlib.RingTheory.Ideal.Norm.AbsNorm
-import Mathlib.NumberTheory.NumberField.Norm
+module
+
+public import X2Y5Z7.SUnits.Collect
+public import X2Y5Z7.SUnits.ClassData
+public import X2Y5Z7.Selmer.L24SIntegers
+public import Mathlib.RingTheory.Ideal.Norm.AbsNorm
+public import Mathlib.NumberTheory.NumberField.Norm
+
+@[expose] public section
 
 /-! # The `S`-unit basis `B₁, …, B₂₄` of `L₂₄` (Table 4 of the paper)
 

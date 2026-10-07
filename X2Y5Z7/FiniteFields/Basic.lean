@@ -1,6 +1,10 @@
-import X2Y5Z7.Arith.Poly
-import Mathlib.RingTheory.AdjoinRoot
-import Mathlib.Algebra.Field.ZMod
+module
+
+public import X2Y5Z7.Arith.Poly
+public import Mathlib.RingTheory.AdjoinRoot
+public import Mathlib.Algebra.Field.ZMod
+
+@[expose] public section
 
 /-! # Explicit finite fields: list arithmetic modulo `(q, P)`
 

@@ -1,7 +1,11 @@
-import Mathlib.Data.Matrix.Mul
-import Mathlib.Data.ZMod.Defs
-import Mathlib.Data.List.OfFn
-import Mathlib.Algebra.BigOperators.Fin
+module
+
+public import Mathlib.Data.Matrix.Mul
+public import Mathlib.Data.ZMod.Defs
+public import Mathlib.Data.List.OfFn
+public import Mathlib.Algebra.BigOperators.Fin
+
+@[expose] public section
 
 /-! # Vectors and matrices over `ZMod 5` as lists
 

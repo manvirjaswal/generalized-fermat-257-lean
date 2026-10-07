@@ -1,5 +1,9 @@
-import X2Y5Z7.FiniteFields.Residue
-import X2Y5Z7.Auxiliary.GenDegreeSum
+module
+
+public import X2Y5Z7.FiniteFields.Residue
+public import X2Y5Z7.Auxiliary.GenDegreeSum
+
+@[expose] public section
 
 /-! # Primes of `L8` above an auxiliary prime as residue maps
 

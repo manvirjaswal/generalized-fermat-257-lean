@@ -1,4 +1,8 @@
-import X2Y5Z7.Units.Signature
+module
+
+public import X2Y5Z7.Units.Signature
+
+@[expose] public section
 
 /-! # Units of `𝓞 L₂₄` modulo fifth powers
 

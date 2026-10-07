@@ -1,10 +1,14 @@
-import Mathlib.FieldTheory.Finite.Extension
-import Mathlib.FieldTheory.Finite.Basic
-import Mathlib.RingTheory.AdjoinRoot
-import Mathlib.RingTheory.Polynomial.UniqueFactorization
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.IntervalCases
+module
+
+public import Mathlib.FieldTheory.Finite.Extension
+public import Mathlib.FieldTheory.Finite.Basic
+public import Mathlib.RingTheory.AdjoinRoot
+public import Mathlib.RingTheory.Polynomial.UniqueFactorization
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.IntervalCases
+
+@[expose] public section
 
 /-! # Irreducibility of a degree-8 polynomial over a finite field
 

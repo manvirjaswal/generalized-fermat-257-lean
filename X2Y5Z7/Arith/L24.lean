@@ -1,5 +1,9 @@
-import X2Y5Z7.Arith.Poly
-import X2Y5Z7.Fields.Basic
+module
+
+public import X2Y5Z7.Arith.Poly
+public import X2Y5Z7.Fields.Basic
+
+@[expose] public section
 
 /-! # Evaluating integer polynomials in `L8` and `L24`
 

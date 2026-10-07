@@ -1,5 +1,9 @@
-import X2Y5Z7.Residue.L24
-import Mathlib.RingTheory.DedekindDomain.AdicValuation
+module
+
+public import X2Y5Z7.Residue.L24
+public import Mathlib.RingTheory.DedekindDomain.AdicValuation
+
+@[expose] public section
 
 /-! # Residues and symbols on the local ring of a prime of `L24`
 

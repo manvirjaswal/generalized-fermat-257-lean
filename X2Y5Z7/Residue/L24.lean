@@ -1,4 +1,8 @@
-import X2Y5Z7.Residue.L8
+module
+
+public import X2Y5Z7.Residue.L8
+
+@[expose] public section
 
 /-! # Residue maps of the ring of integers of `L24`
 

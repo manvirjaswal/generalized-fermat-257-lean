@@ -1,7 +1,11 @@
-import X2Y5Z7.ResidueSymbols.Symbols
-import X2Y5Z7.Reduction.UnitSpan
-import X2Y5Z7.FiniteFields.Q181
-import X2Y5Z7.FiniteFields.Q311
+module
+
+public import X2Y5Z7.ResidueSymbols.Symbols
+public import X2Y5Z7.Reduction.UnitSpan
+public import X2Y5Z7.FiniteFields.Q181
+public import X2Y5Z7.FiniteFields.Q311
+
+@[expose] public section
 
 /-! # The units `B₁₃, …, B₂₄` span the units of `𝓞 L₂₄` modulo fifth powers
 

@@ -1,6 +1,10 @@
-import X2Y5Z7.Auxiliary.GenDegreeSum
-import X2Y5Z7.Auxiliary.Distinct
-import X2Y5Z7.Auxiliary.Generators
+module
+
+public import X2Y5Z7.Auxiliary.GenDegreeSum
+public import X2Y5Z7.Auxiliary.Distinct
+public import X2Y5Z7.Auxiliary.Generators
+
+@[expose] public section
 
 /-! # The residues of the Putz root at the primes of `L₈` above an auxiliary prime
 

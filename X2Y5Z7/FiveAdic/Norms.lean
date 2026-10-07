@@ -1,8 +1,12 @@
-import X2Y5Z7.FiveAdic.Group
-import X2Y5Z7.FiveAdic.Local
-import X2Y5Z7.FiveAdic.Cert
-import X2Y5Z7.Auxiliary.Generators
-import Mathlib.RingTheory.Adjoin.PowerBasis
+module
+
+public import X2Y5Z7.FiveAdic.Group
+public import X2Y5Z7.FiveAdic.Local
+public import X2Y5Z7.FiveAdic.Cert
+public import X2Y5Z7.Auxiliary.Generators
+public import Mathlib.RingTheory.Adjoin.PowerBasis
+
+@[expose] public section
 
 /-! # Norms, and the valuations of `b` at the primes above 5 (Lemmas 2.5, 2.6)
 

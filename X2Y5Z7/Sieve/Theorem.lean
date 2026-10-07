@@ -1,5 +1,9 @@
-import X2Y5Z7.Sieve.Identities
-import X2Y5Z7.Sieve.CheckRun
+module
+
+public import X2Y5Z7.Sieve.Identities
+public import X2Y5Z7.Sieve.CheckRun
+
+@[expose] public section
 
 /-! # Theorem 7.1 of the paper (the sieve)
 

@@ -1,5 +1,9 @@
-import X2Y5Z7.Sieve.ListAlg
-import X2Y5Z7.Sieve.CheckData
+module
+
+public import X2Y5Z7.Sieve.ListAlg
+public import X2Y5Z7.Sieve.CheckData
+
+@[expose] public section
 
 /-! # The finite check behind Theorem 7.1
 

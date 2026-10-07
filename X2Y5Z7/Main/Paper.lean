@@ -1,12 +1,16 @@
-import X2Y5Z7.Main.CondV
-import X2Y5Z7.ResidueSymbols.EResidue
-import X2Y5Z7.Norm.Theorems
-import X2Y5Z7.FiveAdic.Theorem
-import X2Y5Z7.Assembly.Q181
-import X2Y5Z7.Assembly.Q311
-import X2Y5Z7.Assembly.Q131
-import X2Y5Z7.Assembly.Q251
-import X2Y5Z7.Assembly.Q101
+module
+
+public import X2Y5Z7.Main.CondV
+public import X2Y5Z7.ResidueSymbols.EResidue
+public import X2Y5Z7.Norm.Theorems
+public import X2Y5Z7.FiveAdic.Theorem
+public import X2Y5Z7.Assembly.Q181
+public import X2Y5Z7.Assembly.Q311
+public import X2Y5Z7.Assembly.Q131
+public import X2Y5Z7.Assembly.Q251
+public import X2Y5Z7.Assembly.Q101
+
+@[expose] public section
 
 /-! # The proof of Theorem 1.1, as in Section 7 of the paper
 

@@ -1,8 +1,12 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.Integral.Omega
-import X2Y5Z7.SUnits.Data
+module
+
+public import X2Y5Z7.Integral.Omega
+public import X2Y5Z7.SUnits.Data
+
+@[expose] public section
 
 /-! # Integrality and relative norms of `B_j` for `j + 1 ∈ [9, 10, 11, 12, 13, 14, 15, 16]`
 

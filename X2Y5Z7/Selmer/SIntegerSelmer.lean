@@ -1,5 +1,9 @@
-import X2Y5Z7.Selmer.SUnitSequence
-import Mathlib.RingTheory.DedekindDomain.SInteger
+module
+
+public import X2Y5Z7.Selmer.SUnitSequence
+public import Mathlib.RingTheory.DedekindDomain.SInteger
+
+@[expose] public section
 
 /-! # Selmer groups over a localization: `S`-units modulo `n`-th powers and `K(S, n)`
 

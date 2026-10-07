@@ -1,4 +1,8 @@
-import X2Y5Z7.Selmer.L24SIntegers
+module
+
+public import X2Y5Z7.Selmer.L24SIntegers
+
+@[expose] public section
 
 /-! # Elements of the Selmer group as products of `S`-units
 

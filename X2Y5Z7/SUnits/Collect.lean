@@ -1,9 +1,13 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.SUnits.Cert0
-import X2Y5Z7.SUnits.Cert1
-import X2Y5Z7.SUnits.Cert2
+module
+
+public import X2Y5Z7.SUnits.Cert0
+public import X2Y5Z7.SUnits.Cert1
+public import X2Y5Z7.SUnits.Cert2
+
+@[expose] public section
 
 /-! # Integrality and norms of `B₁, …, B₂₄` (collected from `Cert0`–`Cert2`) -/
 

@@ -1,5 +1,9 @@
-import X2Y5Z7.FiveAdic.Valuation
-import X2Y5Z7.Descent.Valuations
+module
+
+public import X2Y5Z7.FiveAdic.Valuation
+public import X2Y5Z7.Descent.Valuations
+
+@[expose] public section
 
 /-! # Section 4.2: the local analysis at one prime of `L₂₄` above 5
 

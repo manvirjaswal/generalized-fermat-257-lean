@@ -1,4 +1,8 @@
-import X2Y5Z7.SUnits.Theorems
+module
+
+public import X2Y5Z7.SUnits.Theorems
+
+@[expose] public section
 
 /-! # Distinctness of the primes `(B_i)`: the general argument (Proposition 6.2(i))
 

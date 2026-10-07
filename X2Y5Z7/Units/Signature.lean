@@ -1,6 +1,10 @@
-import X2Y5Z7.Units.RealRoots
-import Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
-import Mathlib.NumberTheory.NumberField.Units.DirichletTheorem
+module
+
+public import X2Y5Z7.Units.RealRoots
+public import Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
+public import Mathlib.NumberTheory.NumberField.Units.DirichletTheorem
+
+@[expose] public section
 
 /-! # The signature and the unit rank of `L₂₄`
 

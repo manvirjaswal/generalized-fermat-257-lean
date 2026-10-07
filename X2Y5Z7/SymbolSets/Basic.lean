@@ -1,4 +1,8 @@
-import X2Y5Z7.FiniteFields.Model
+module
+
+public import X2Y5Z7.FiniteFields.Model
+
+@[expose] public section
 
 /-! # Proposition 5.3: generic lemmas
 

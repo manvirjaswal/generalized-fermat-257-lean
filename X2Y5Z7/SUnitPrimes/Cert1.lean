@@ -1,7 +1,11 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.SUnitPrimes.Basic
+module
+
+public import X2Y5Z7.SUnitPrimes.Basic
+
+@[expose] public section
 
 /-! # Proposition 6.2(i): distinctness of the primes `(B_i)`, pairs (3, 5), (3, 6), (3, 7), (3, 8), (4, 5), (4, 6), (4, 7)
 

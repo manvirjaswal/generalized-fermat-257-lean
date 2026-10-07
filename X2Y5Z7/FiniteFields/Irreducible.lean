@@ -1,5 +1,9 @@
-import X2Y5Z7.FiniteFields.Basic
-import X2Y5Z7.Fields.FrobeniusBridge
+module
+
+public import X2Y5Z7.FiniteFields.Basic
+public import X2Y5Z7.Fields.FrobeniusBridge
+
+@[expose] public section
 
 /-! # Irreducibility of the model polynomials (Rabin's criterion)
 

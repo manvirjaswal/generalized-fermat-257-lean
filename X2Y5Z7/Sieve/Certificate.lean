@@ -3,8 +3,12 @@ Generated from the tables printed in the paper.
 Proof data for Theorem 7.1, found by linear algebra mod 5. The printed affine space `c₀ + span(d₁, …, d₁₀)` of (A.2) supplies `c0` and the columns of `Dm`. Every property of these matrices that the proof uses is checked in Lean.
 -/
 
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Data.ZMod.Basic
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Notation
+public import Mathlib.Data.ZMod.Basic
+
+@[expose] public section
 
 namespace X2Y5Z7.Sieve.Cert
 

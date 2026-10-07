@@ -1,8 +1,12 @@
-import Mathlib.RingTheory.Adjoin.Basic
-import Mathlib.Algebra.Field.Basic
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.LinearCombination
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.RingTheory.Adjoin.Basic
+public import Mathlib.Algebra.Field.Basic
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.LinearCombination
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! # Extending a residue map by clearing denominators
 

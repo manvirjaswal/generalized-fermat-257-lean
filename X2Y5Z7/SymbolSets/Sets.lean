@@ -4,9 +4,13 @@ The symbol matrices `M_q` (rows: the primes of `L₂₄` above `q`, in the order
 sets `I(q)` of Appendix A.5 (Proposition 5.3), for `q = 181, 311, 131, 251, 101`.
 -/
 
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Data.ZMod.Basic
-import Mathlib.Data.Finset.Dedup
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Notation
+public import Mathlib.Data.ZMod.Basic
+public import Mathlib.Data.Finset.Dedup
+
+@[expose] public section
 
 namespace X2Y5Z7.SymbolSets
 

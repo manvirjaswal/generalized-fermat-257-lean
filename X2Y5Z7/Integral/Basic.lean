@@ -1,8 +1,12 @@
-import X2Y5Z7.Arith.L24
-import X2Y5Z7.Integral.LUCertificate
-import Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic
-import Mathlib.RingTheory.Norm.Transitivity
-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+module
+
+public import X2Y5Z7.Arith.L24
+public import X2Y5Z7.Integral.LUCertificate
+public import Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic
+public import Mathlib.RingTheory.Norm.Transitivity
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+
+@[expose] public section
 
 /-! # Integrality and relative norms in `L₈` and `L₂₄ = L₈(b)`
 

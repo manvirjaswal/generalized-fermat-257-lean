@@ -1,6 +1,10 @@
-import X2Y5Z7.Fields.Basic
-import X2Y5Z7.Selmer.SIntegerSelmer
-import Mathlib.NumberTheory.NumberField.ClassNumber
+module
+
+public import X2Y5Z7.Fields.Basic
+public import X2Y5Z7.Selmer.SIntegerSelmer
+public import Mathlib.NumberTheory.NumberField.ClassNumber
+
+@[expose] public section
 
 /-! # The `S`-integers of `L₂₄` at 2, 5, 7 and the Selmer group `L₂₄(S, 5)`
 

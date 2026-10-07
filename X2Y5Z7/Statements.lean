@@ -1,4 +1,8 @@
-import X2Y5Z7.Main.Paper
+module
+
+public import X2Y5Z7.Main.Paper
+
+@[expose] public section
 
 /-! # Theorems 1.1 and 1.2 of the paper, as stated there
 

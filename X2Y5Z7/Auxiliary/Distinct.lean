@@ -1,4 +1,8 @@
-import X2Y5Z7.Auxiliary.ResidueGeneration
+module
+
+public import X2Y5Z7.Auxiliary.ResidueGeneration
+
+@[expose] public section
 
 /-! # Distinct primes give distinct minimal polynomials
 

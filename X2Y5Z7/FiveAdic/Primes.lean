@@ -1,10 +1,14 @@
-import X2Y5Z7.FiveAdic.Valuation
-import X2Y5Z7.SUnitPrimes.Theorems
-import X2Y5Z7.Descent.Valuations
-import Mathlib.RingTheory.FractionalIdeal.Norm
-import Mathlib.NumberTheory.Padics.PadicVal.Basic
-import Mathlib.GroupTheory.Perm.Cycle.Type
-import Mathlib.LinearAlgebra.FreeModule.IdealQuotient
+module
+
+public import X2Y5Z7.FiveAdic.Valuation
+public import X2Y5Z7.SUnitPrimes.Theorems
+public import X2Y5Z7.Descent.Valuations
+public import Mathlib.RingTheory.FractionalIdeal.Norm
+public import Mathlib.NumberTheory.Padics.PadicVal.Basic
+public import Mathlib.GroupTheory.Perm.Cycle.Type
+public import Mathlib.LinearAlgebra.FreeModule.IdealQuotient
+
+@[expose] public section
 
 /-! # The seven primes of `L₂₄` above 5 (Lemma 2.5, Table 2)
 

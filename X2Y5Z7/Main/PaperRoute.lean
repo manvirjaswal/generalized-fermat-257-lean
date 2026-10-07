@@ -1,13 +1,17 @@
-import X2Y5Z7.Main.AuxAt
-import X2Y5Z7.Reduction.SelmerForm
-import X2Y5Z7.ResidueSymbols.UnitSpanInst
-import X2Y5Z7.FiniteFields.Q181
-import X2Y5Z7.FiniteFields.Q311
-import X2Y5Z7.FiniteFields.Q131
-import X2Y5Z7.FiniteFields.Q251
-import X2Y5Z7.FiniteFields.Q101
-import X2Y5Z7.SymbolSets.Sets
-import X2Y5Z7.Sieve.Theorem
+module
+
+public import X2Y5Z7.Main.AuxAt
+public import X2Y5Z7.Reduction.SelmerForm
+public import X2Y5Z7.ResidueSymbols.UnitSpanInst
+public import X2Y5Z7.FiniteFields.Q181
+public import X2Y5Z7.FiniteFields.Q311
+public import X2Y5Z7.FiniteFields.Q131
+public import X2Y5Z7.FiniteFields.Q251
+public import X2Y5Z7.FiniteFields.Q101
+public import X2Y5Z7.SymbolSets.Sets
+public import X2Y5Z7.Sieve.Theorem
+
+@[expose] public section
 
 /-! # The class of `E` in terms of the basis `B₁, …, B₂₄`
 

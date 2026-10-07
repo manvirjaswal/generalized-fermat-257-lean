@@ -1,7 +1,11 @@
-import X2Y5Z7.ResidueSymbols.Symbols
-import X2Y5Z7.Auxiliary.Generators
-import X2Y5Z7.Descent.Valuations
-import X2Y5Z7.Units.RealRoots
+module
+
+public import X2Y5Z7.ResidueSymbols.Symbols
+public import X2Y5Z7.Auxiliary.Generators
+public import X2Y5Z7.Descent.Valuations
+public import X2Y5Z7.Units.RealRoots
+
+@[expose] public section
 
 /-! # The descent element modulo a model prime
 

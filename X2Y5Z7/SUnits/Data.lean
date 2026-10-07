@@ -1,7 +1,11 @@
 /-
 Generated from Table 4 of the paper.
 -/
-import X2Y5Z7.Arith.L24
+module
+
+public import X2Y5Z7.Arith.L24
+
+@[expose] public section
 
 namespace X2Y5Z7
 

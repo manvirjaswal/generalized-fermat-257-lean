@@ -1,4 +1,8 @@
-import X2Y5Z7.Fields.Basic
+module
+
+public import X2Y5Z7.Fields.Basic
+
+@[expose] public section
 
 /-! # Solutions, the fibre polynomial and the descent element (Sections 1–3 of the paper)
 

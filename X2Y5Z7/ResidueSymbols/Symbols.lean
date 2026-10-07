@@ -1,5 +1,9 @@
-import X2Y5Z7.ResidueSymbols.Models
-import X2Y5Z7.Residue.Local
+module
+
+public import X2Y5Z7.ResidueSymbols.Models
+public import X2Y5Z7.Residue.Local
+
+@[expose] public section
 
 /-! # Fifth-power symbols of `𝔔`-units at the model primes
 

@@ -1,6 +1,10 @@
-import X2Y5Z7.Norm.Identities
-import X2Y5Z7.Norm.Basic
-import X2Y5Z7.Sieve.Theorem
+module
+
+public import X2Y5Z7.Norm.Identities
+public import X2Y5Z7.Norm.Basic
+public import X2Y5Z7.Sieve.Theorem
+
+@[expose] public section
 
 /-! # Lemma 6.3 and the condition (N) for the descent element
 
