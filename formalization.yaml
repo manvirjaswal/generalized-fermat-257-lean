@@ -1,0 +1,159 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "The generalized Fermat equation x² + y⁵ = z⁷"
+  description: >-
+    A Lean 4 and Mathlib formalization of the main results of the paper "The generalized Fermat
+    equation x² + y⁵ = z⁷" by Manvir Jaswal. Following Putz, a solution is a triple of integers
+    (X, Y, Z) with X⁵ + Y² = Z⁷, gcd(X, Y, Z) = 1 and XYZ ≠ 0; put η = X⁵/Z⁷ and
+    A_η = ℚ[t]/(f_η), where f_η(t) = 4t⁵ψ(t) − η(4t − 1) and ψ(t) = 25t³ + 20t² + 14t + 14.
+    Theorem 1.1 says that A_η is never isomorphic to Putz's octic field L₈ = ℚ[x]/(h), where
+    h(x) = x⁸ + 4x⁷ − 28x⁶ − 168x⁵ − 140x⁴ + 560x³ + 840x² − 480x − 940. Theorem 1.2 combines
+    this with Putz's Theorem 4.33, which says that A_η is always isomorphic to L₈, to show that
+    x² + y⁵ = z⁷, and equivalently x² + y⁷ = z⁵ and x⁵ + y⁷ = z², have no solution in nonzero
+    coprime integers. The Lean theorems take two hypotheses: Putz's Theorem 4.33 (for Theorem 1.2
+    only), and that the class group of the ring of integers of L₂₄ = L₈[t]/(ψ) has no element of
+    order 5, which follows from the paper's proof that L₂₄ has class number 1, a computation that
+    is not formalized. The proof follows the paper: a fifth-power descent over L₂₄, completed by
+    fifth-power residue symbols at the primes 101, 131, 181, 251 and 311, with every computation
+    checked by the Lean kernel.
+  authors:
+    - "Manvir Jaswal"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Manvir Jaswal"
+
+classification:
+  arxiv: ["math.NT"]
+  msc2020: ["11D41", "11R29", "11Y40", "11Y50"]
+
+sources:
+  - title: "The generalized Fermat equation x² + y⁵ = z⁷"
+    authors:
+      - "Manvir Jaswal"
+    id: "https://doi.org/10.5281/zenodo.23223027"
+    type: "paper"
+    location: "Theorems 1.1 and 1.2 (Section 1.3), proved in Sections 2–7 with the data of Appendix A"
+    relationship: "formalizes"
+    note: >-
+      Preprint, version 2, Zenodo, 2026. The Lean theorems are Theorems 1.1 and 1.2 and the two
+      equivalent forms in Theorem 1.2, with the hypotheses described under status.scope. The
+      formal proof follows the paper's proof; Theorem 7.1 (the sieve) is checked from the data
+      printed in Appendix A.
+    license: "CC-BY-4.0"
+    author_endorsement: "participated"
+  - title: "Enumeration of local and global étale algebras applied to generalized Fermat equations"
+    authors:
+      - "Piet Hein Casper Putz"
+    id: "https://doi.org/10.5463/thesis.832"
+    location: "Theorem 4.33"
+    relationship: "other"
+    note: >-
+      PhD thesis, Vrije Universiteit Amsterdam, 2024. Its Theorem 4.33 (Theorem 2.2 of the paper):
+      for every solution, A_η is isomorphic to L₈. It is not formalized; Theorem 1.2 and its
+      equivalent forms take it as the hypothesis hPutz.
+
+related_formalizations:
+  - id: "https://doi.org/10.5281/zenodo.23065698"
+    relationship: "other"
+    note: >-
+      The archived release of this formalization (Zenodo, version 1.0, 30 September 2026, on Lean
+      v4.34.0), which is the first commit of this repository, f3306d60bbb35363946db9902e464d9cc2725a54.
+      Later commits move it to Lean v4.35.0-rc2 and the module system and add Challenge.lean,
+      Solution.lean, comparator.json and this file; the theorems, their hypotheses and their
+      proofs are unchanged.
+
+status:
+  scope: >-
+    Formalized: Theorem 1.1 (X2Y5Z7.theorem_1_1) and Theorem 1.2 with its two equivalent forms
+    (X2Y5Z7.theorem_1_2, X2Y5Z7.theorem_1_2_257, X2Y5Z7.theorem_1_2_572), by the paper's own route,
+    together with the results of the paper that this proof uses, among them Theorem 7.1 (the sieve,
+    from the data of Appendix A) and Propositions 3.1, 3.2, 4.2, 5.3 and 6.2. Comparator also checks
+    X2Y5Z7.h_irreducible and X2Y5Z7.ψL8_irreducible, the irreducibility of h over ℚ and of ψ over L₈
+    (Lemma 2.4(a) and (c)), which make L₈ and L₂₄ fields in the statements. Hypotheses: all four
+    theorems assume hclass, that the class group of the ring of integers of L₂₄ has no element of
+    order 5; the paper proves that L₂₄ has class number 1 (Theorem 6.1, Appendix B), and that
+    computation is not formalized, so the Lean Theorem 1.1 is conditional where the paper's is
+    not. Theorem 1.2 and its equivalent forms also assume hPutz, Putz's Theorem 4.33. Not
+    formalized, and not used by the proof: Lemma 2.1, the discriminants in Lemma 2.4,
+    Proposition 5.4 and Section 8.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+
+automation:
+  methods:
+    - method: "agent"
+      models: []
+      tool_setup: >-
+        The Lean code was written by AI agents working from the paper: they chose the formal
+        statements, checked them against the printed text, and wrote the proofs. The author approved
+        the scope, for example taking the class number of L₂₄ as the hypothesis hclass instead of
+        formalizing Appendix B. The names of the models are not recorded here.
+  spend_usd: "subscription-based; not tracked"
+  notes: >-
+    The formalization was done with AI systems, under the author's direction, in September 2026.
+    The move to Lean v4.35.0-rc2 and the module system, and the Challenge and Solution files for
+    Comparator, were also made with AI systems, in October 2026.
+
+fidelity:
+  divergences: >-
+    The Lean theorems assume hclass, a consequence of the paper's Theorem 6.1, so the Lean Theorem
+    1.1 is conditional where the paper's is not. Two arguments differ in form, not in substance.
+    Section 4 of the paper works in the completions at 5 (Newton polygons, Hensel's lemma); the
+    Lean proof of Proposition 4.2 works instead with the valuations at the seven prime ideals of
+    L₂₄ above 5 and with norms, and reaches the same conclusions. The rows of the printed matrices
+    M_q list the primes above q in another order than the Lean residue-field models; the
+    permutations are explicit, and the kernel checks that they carry the models' matrices and sets
+    I(q) to the printed ones.
+
+review:
+  status: "agent-reviewed"
+  reviewers: []
+  notes: >-
+    The formal statements were checked against the paper's printed Theorems 1.1 and 1.2 by AI
+    agents, and again when the archived release was deposited. That release passed a build from a
+    fresh copy, an axiom check and a replay of every module through Lean's kernel checker. No
+    independent human review of the Lean code has been done.
+
+alignment:
+  namespace: "X2Y5Z7"
+  statements:
+    - source: "Theorem 1.1"
+      lean: "X2Y5Z7.theorem_1_1"
+      module: "X2Y5Z7.Statements"
+      status: "proved"
+      note: "Under the hypothesis hclass."
+    - source: "Theorem 1.2"
+      lean: "X2Y5Z7.theorem_1_2"
+      module: "X2Y5Z7.Statements"
+      status: "proved"
+      note: "Under the hypotheses hPutz (Putz's Theorem 4.33) and hclass."
+    - source: "Theorem 1.2, the equivalent form x² + y⁷ = z⁵"
+      lean: "X2Y5Z7.theorem_1_2_257"
+      module: "X2Y5Z7.Statements"
+      status: "proved"
+      note: "Under the hypotheses hPutz and hclass."
+    - source: "Theorem 1.2, the equivalent form x⁵ + y⁷ = z²"
+      lean: "X2Y5Z7.theorem_1_2_572"
+      module: "X2Y5Z7.Statements"
+      status: "proved"
+      note: "Under the hypotheses hPutz and hclass."
+    - source: "Lemma 2.4(a), first sentence: h is irreducible"
+      lean: "X2Y5Z7.h_irreducible"
+      module: "X2Y5Z7.Fields.Basic"
+      status: "proved"
+      note: "h is irreducible modulo 17."
+    - source: "Lemma 2.4(c), first sentence: ψ is irreducible over L₈"
+      lean: "X2Y5Z7.ψL8_irreducible"
+      module: "X2Y5Z7.Fields.Basic"
+      status: "proved"
+      note: "A root of ψ in L₈ would generate a cubic subfield of the octic field."
+    - source: "Theorem 7.1"
+      lean: "X2Y5Z7.Sieve.sieve"
+      module: "X2Y5Z7.Sieve.Theorem"
+      status: "proved"
+      note: "From the data printed in Appendix A."
+
+acknowledgements: "Built on Lean 4 and Mathlib."
