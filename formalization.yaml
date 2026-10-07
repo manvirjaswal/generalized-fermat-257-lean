@@ -88,9 +88,9 @@ automation:
       models: []
       tool_setup: >-
         The Lean code was written by AI agents working from the paper: they chose the formal
-        statements, checked them against the printed text, and wrote the proofs. The author approved
-        the scope, for example taking the class number of L₂₄ as the hypothesis hclass instead of
-        formalizing Appendix B. The names of the models are not recorded here.
+        statements, checked them against the printed text, and wrote the proofs. The class number of
+        L₂₄ is taken as the hypothesis hclass instead of formalizing Appendix B. The names of the
+        models are not recorded here.
   spend_usd: "subscription-based; not tracked"
   notes: >-
     The formalization was done with AI systems, under the author's direction, in September 2026.
