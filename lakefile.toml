@@ -1,6 +1,6 @@
 name = "X2Y5Z7"
 version = "0.1.0"
-defaultTargets = ["X2Y5Z7"]
+defaultTargets = ["X2Y5Z7", "Challenge", "Solution"]
 
 [[require]]
 name = "mathlib"
@@ -9,3 +9,11 @@ rev = "v4.35.0-rc2"
 
 [[lean_lib]]
 name = "X2Y5Z7"
+
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]
