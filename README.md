@@ -5,6 +5,12 @@ A Lean 4 formalization, with Mathlib, of Theorems 1.1 and 1.2 of
 > Manvir Jaswal, *The generalized Fermat equation x² + y⁵ = z⁷*, preprint, version 2, Zenodo, 2026.
 > <https://doi.org/10.5281/zenodo.23223027>
 
+**Main result.** x² + y⁵ = z⁷ has no solution in nonzero coprime integers, assuming the two hypotheses
+[below](#the-two-hypotheses).
+
+**Verification.** The proofs use only Lean's standard axioms (`propext`, `Classical.choice`, `Quot.sound`), with no
+`sorry` and no `native_decide`; every computation is checked by the Lean kernel.
+
 The archived release of this formalization, on Lean v4.34.0, is <https://doi.org/10.5281/zenodo.23065698>.
 This repository moves it to Lean v4.35.0-rc2 and the module system, in the layout of the
 [Palomar](https://palomar-registry.org/) registry; the theorems and their proofs are unchanged.
